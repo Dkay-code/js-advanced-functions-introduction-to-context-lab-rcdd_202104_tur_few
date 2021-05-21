@@ -23,7 +23,7 @@ function createTimeInEvent (employeeObject, date ="YYYY-MM-DD HHMM"){
     date : date.slice(0,11),
   }
   employeeObject.createTimeInEvents.push(obj);
-
+console.log(employeeObject)
 }
 
 function createEmployeeRecord ([firstName, familyName, title, payPerHour]) {
