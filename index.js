@@ -23,4 +23,5 @@ function createTimeInEvent (employeeObject, date =["YYYY-MM-DD HHMM"]){
     date : date.slice(0,11),
   }
   employeeObject.createTimeInEvents.push(obj);
+  return employeeObject;
 }
