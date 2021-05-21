@@ -56,3 +56,7 @@ function allWagesFor (employeeObject){
 function calculatePayroll(employeeArr) {
   return employeeArr.reduce((acc, payroll) => acc + allWagesFor(payroll),0);
 }
+
+function findEmployeeByFirstName (srcArray, firstName){
+  return srcArray.find((employee) => employee.firstName === firstName);
+}
