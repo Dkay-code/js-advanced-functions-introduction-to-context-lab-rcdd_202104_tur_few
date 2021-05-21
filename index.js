@@ -47,3 +47,8 @@ function wagesEarnedOnDate (employeeObject, date="YYYY-MM-DD"){
   let rate  = employeeObject.payPerHour;
   return (parseInt(hoursWorked))*(parseInt(rate));
 }
+
+function allWagesFor (employeeObject){
+  let dates = employeeObject.timeInEvents.map(workingDates => workingDates = timeInEvents.date);
+  return dates * wagesEarnedOnDate;
+}
