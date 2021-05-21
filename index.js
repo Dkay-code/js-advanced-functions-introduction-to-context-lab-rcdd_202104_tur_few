@@ -39,5 +39,5 @@ function createTimeOutEvent (employeeObject, dateHour = "YYYY-MM-DD HHMM"){
 function hoursWorkedOnDate(employeeObject, date="YYYY-MM-DD"){
   let timeIn = employeeObject.timeInEvents.filter(checkIn => checkIn.date === date);
   let timeOut = employeeObject.timeOutEvents.filter(checkOut => checkOut.date === date);
-  return parseInt(timeOut[0].hour)-parseInt(timeIn[0].hour)/100;
+  return parseInt((timeOut[0].hour)-parseInt(timeIn[0].hour))/100;
 }
