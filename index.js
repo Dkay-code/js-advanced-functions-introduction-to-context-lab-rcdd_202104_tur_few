@@ -16,11 +16,11 @@ return arrays.map(element => element = createEmployeeRecord(element))
 }
 
 
-function createTimeInEvent (employeeObject, date = "YYYY-MM-DD HHMM"){
+function createTimeInEvent (employeeObject, dateHour = "YYYY-MM-DD HHMM"){
   let obj = {
     type : "TimeIn",
-    hour : parseInt(date.slice(10)),
-    date : date.slice(0,11),
+    hour : parseInt(dateHour.slice(10)),
+    date : dateHour.slice(0,10),
   };
   employeeObject.timeInEvents.push(obj);
   return employeeObject;
