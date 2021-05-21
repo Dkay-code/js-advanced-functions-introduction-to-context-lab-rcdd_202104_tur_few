@@ -43,7 +43,7 @@ function hoursWorkedOnDate(employeeObject, date="YYYY-MM-DD"){
 }
 
 function wagesEarnedOnDate (employeeObject, date="YYYY-MM-DD"){
-  let hoursWorked = employeeObject.hoursWorkedOnDate;
-  let rate  = employeeObject.createEmployeeRecord[payPerHour];
+  let hoursWorked = hoursWorkedOnDate(employeeObject, date);
+  let rate  = employeeObject.payPerHour;
   return (parseInt(hoursWorked))*(parseInt(rate));
 }
