@@ -3,9 +3,9 @@ function createEmployeeRecord ([firstName, familyName, title, payPerHour]) {
         firstName: `${firstName}`,
         familyName: `${familyName}`,
         title: `${title}`,
-        payPerHour: `${payPerHour}`,
-        timeInEvents: `${timeInEvents}`,
-        timeOutEvents: `${timeOutEvents}`,
+        payPerHour: payPerHour,
+        timeInEvents: [],
+        timeOutEvents: [],
     }
     return obj;
 }
