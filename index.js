@@ -24,15 +24,3 @@ function createTimeInEvent (employeeObject, date ="YYYY-MM-DD HHMM"){
   }
   employeeObject.createTimeInEvents.push(obj);
 }
-
-function createEmployeeRecord ([firstName, familyName, title, payPerHour]) {
-    const obj = {
-        firstName: `${firstName}`,
-        familyName: `${familyName}`,
-        title: `${title}`,
-        payPerHour: payPerHour,
-        timeInEvents: [],
-        timeOutEvents: [],
-    }
-    return obj;
-}
