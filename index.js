@@ -35,4 +35,3 @@ function createTimeOutEvent (employeeObject, dateHour = "YYYY-MM-DD HHMM"){
   employeeObject.timeInEvents.push(obj);
   return employeeObject;
 }
-
