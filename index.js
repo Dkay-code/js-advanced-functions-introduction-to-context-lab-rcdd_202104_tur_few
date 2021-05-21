@@ -50,5 +50,6 @@ function wagesEarnedOnDate (employeeObject, date="YYYY-MM-DD"){
 
 function allWagesFor (employeeObject){
   let dates = employeeObject.timeInEvents.map(workingDates => workingDates = timeInEvents.date);
-  return dates * wagesEarnedOnDate;
+  let payPerDate = dates * wagesEarnedOnDate();
+  return dates.reduce((acc, payPerDate) => payPerDate + acc);
 }
