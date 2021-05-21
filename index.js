@@ -17,7 +17,7 @@ function createEmployeeRecord ([firstName, familyName, title, payPerHour]) {
 //     }
 //     return obj;
 // }
-function createEmployeeRecords (Arrays) {
+function createEmployeeRecords (arrays) {
   arrays.map(element => element = [createEmployeeRecord(element)])
 }
 
