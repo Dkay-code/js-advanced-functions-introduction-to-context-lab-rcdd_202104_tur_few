@@ -8,12 +8,12 @@ function createEmployeeRecord ([firstName, familyName, title, payPerHour]) {
         timeOutEvents: [],
     }
     return obj;
-}
+};
 
 
 function createEmployeeRecords (arrays) {
 return arrays.map(element => element = createEmployeeRecord(element))
-}
+};
 
 
 function createTimeInEvent (employeeObject, dateHour = "YYYY-MM-DD HHMM"){
@@ -24,7 +24,7 @@ function createTimeInEvent (employeeObject, dateHour = "YYYY-MM-DD HHMM"){
   };
   employeeObject.timeInEvents.push(obj);
   return employeeObject;
-}
+};
 
 function createTimeOutEvent (employeeObject, dateHour = "YYYY-MM-DD HHMM"){
   let obj = {
@@ -32,6 +32,6 @@ function createTimeOutEvent (employeeObject, dateHour = "YYYY-MM-DD HHMM"){
     hour : parseInt(dateHour.slice(10)),
     date : dateHour.slice(0,10),
   };
-  employeeObject.timeInEvents.push(obj);
+  employeeObject.timeOutEvents.push(obj);
   return employeeObject;
-}
+};
