@@ -9,3 +9,23 @@ function createEmployeeRecord ([firstName, familyName, title, payPerHour]) {
     }
     return obj;
 }
+
+
+// function createEmployeeRecords([[employee],[employee]]) {
+//     const obj = {
+//         employee1: [0]
+//     }
+//     return obj;
+// }
+function createEmployeeRecords (Arrays) {
+  arrays.map(element => element = createEmployeeRecord(element))
+}
+
+
+// function createEmployeeRecords (Arrays) {
+//  const outputArray = []; 
+//      Arrays.forEach(element => {
+//          outputArray.push(createEmployeeRecord(element))
+//      });
+//  return outputArray
+//  }
