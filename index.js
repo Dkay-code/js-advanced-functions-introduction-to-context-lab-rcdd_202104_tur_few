@@ -51,6 +51,6 @@ function wagesEarnedOnDate (employeeObject, date="YYYY-MM-DD"){
 function allWagesFor (employeeObject){
   let dates = employeeObject.timeInEvents.map(workingDates => workingDates.date);
 // const datesArray = employeeRecordObject.timeInEvents.map(day => day.date)
-  return (dates.reduce((acc, date) => wagesEarnedOnDate (employeeObject, date="YYYY-MM-DD") + acc,0));
+  return (dates.reduce((acc, date) => acc + wagesEarnedOnDate (employeeObject, date),0));
 }
  // return (datesArray.reduce((total, date) => total + wagesEarnedOnDate(employeeRecordObject, date), 0))
