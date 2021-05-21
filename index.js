@@ -26,11 +26,13 @@ function createTimeInEvent (employeeObject, dateHour = "YYYY-MM-DD HHMM"){
   return employeeObject;
 }
 
-// const createTimeInEvent = (employee, dateStamp) => {
-//                  employee.timeInEvents.push({
-//                                  type: 'TimeIn',
-//                                  hour: parseInt(dateStamp.split(' ')[1]),
-//                                  date: dateStamp.split(' ')[0],
-//                  });
-//                  return employee;
-//  };
+function createTimeOutEvent (employeeObject, dateHour = "YYYY-MM-DD HHMM"){
+  let obj = {
+    type : "TimeOut",
+    hour : parseInt(dateHour.slice(10)),
+    date : dateHour.slice(0,10),
+  };
+  employeeObject.timeInEvents.push(obj);
+  return employeeObject;
+}
+
