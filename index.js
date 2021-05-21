@@ -23,7 +23,7 @@ function createEmployeeRecords (Arrays) {
 
 
 // function createEmployeeRecords (Arrays) {
-//  const outputArray = []; 
+//  const outputArray = [];
 //      Arrays.forEach(element => {
 //          outputArray.push(createEmployeeRecord(element))
 //      });
